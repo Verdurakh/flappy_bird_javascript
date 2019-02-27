@@ -15,7 +15,7 @@ function Player(color, x, y) {
   this.maxVSpeed = 3;
   this.gravity = 0.5;
   this.image = new Image();
-  this.image.src = "/img/bird.png";
+  this.image.src = "img/bird.png";
   this.update = function() {
     this.y = this.y + this.vSpeed;
     this.collisionY = this.y;

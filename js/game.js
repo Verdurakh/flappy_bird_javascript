@@ -3,8 +3,9 @@ var canRestart = false;
 var distanceSinceLastWall = 0;
 var gameDiv;
 var gameOverDiv;
-var pipeUp = "/img/pipeUp.png";
-var pipeDown = "/img/pipeDown.png";
+var pipeUp = "img/pipeUp.png";
+var pipeDown = "img/pipeDown.png";
+var bg = "img/bg.png";
 
 function startGame() {
   var cookie = getCookie("fgdfgdf");
@@ -35,7 +36,7 @@ var flappy = {
     this.totalWalls = 0;
     this.canCreateWall = true;
     this.image = new Image();
-    this.image.src = "/img/bg.png";
+    this.image.src = bg;
 
     this.canvas.addEventListener("click", flappy.player.flap);
 
@@ -68,7 +69,7 @@ var flappy = {
 function gameOver() {
   console.log("game over");
   flappy.player.y = 0;
-  return;
+
   gameOverDiv.style.display = "block";
   var span = document.getElementById("points");
 
