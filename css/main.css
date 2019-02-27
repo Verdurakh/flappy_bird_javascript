@@ -1,0 +1,12 @@
+#gameOver {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  background-color: white;
+  padding: 24px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.hidden {
+  display: none;
+}

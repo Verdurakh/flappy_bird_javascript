@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body onload="startGame()" style="background-color:black;margin:0;">
+    <div
+      id="game"
+      style="width:100%;height:100%;max-width:800px;max-height:600px"
+    >
+      <div id="gameOver" class="hidden">
+        <div>Game Over!</div>
+        <div>You got <span id="points">0</span> points!</div>
+        <div></div>
+        <div>Touch/Click anywhere to play again</div>
+      </div>
+    </div>
+
+    <script src="js/game.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/wall.js"></script>
+    <script src="js/drawWorld.js"></script>
+  </body>
+</html>
